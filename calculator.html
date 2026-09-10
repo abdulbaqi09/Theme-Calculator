@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+    <script src="calculator.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <section class="">
+        <input type="text" id="display" placeholder="0" readonly> <br>
+
+         <div class="layout-aspect">
+        <button  class="button-number" onclick="powerOn()">ON</button>
+        <button  class="button-number" onclick="powerOff()">OFF</button>
+        <button class="button-number" onclick="slice('')">DEL</button>
+        <button class="button-function" onclick="cleardisplay()">AC</button>
+
+        <button class="button-function" onclick="toggleTheme()">
+        <i class="fa-solid fa-moon"></i>
+        </button>
+            </div> <br>
+
+        <div class="layout">
+        <button onclick="appendNumber('%')">%</button>
+        <button onclick="calculateSqrt()">√</button>
+        <button onclick="appendNumber('(')">(</button>
+        <button onclick="appendNumber(')')">)</button>
+        <button class="button-function" onclick="appendNumber('.')">.</button> 
+        </div> <br>
+
+        <div class="layout">
+        <button class="button-number" onclick="appendNumber ('1')">1</button>
+        <button class="button-number" onclick="appendNumber ('2')">2</button>
+        <button class="button-number" onclick="appendNumber ('3')">3</button>
+        <button class="button-function" onclick="multiply('*')">*</button>
+        <button class="button-number" onclick="divide('/')">/</button>
+        </div> <br>
+
+        <div class="layout">
+        <button class="button-number" onclick="appendNumber ('4')">4</button>
+        <button class="button-number" onclick="appendNumber ('5')">5</button>
+        <button class="button-number" onclick="appendNumber ('6')">6</button>
+        <button class="button-function" onclick="add('+')">+</button>
+        <button class="button-function" onclick="subtract('-')">-</button> 
+        </div> <br>
+
+        <div class="layout">
+        <button  class="button-number" onclick="appendNumber ('7')">7</button>
+        <button  class="button-number" onclick="appendNumber ('8')">8</button>
+        <button  class="button-number" onclick="appendNumber ('9')">9</button>
+        <button  class="button-number" onclick="appendNumber ('0')">0</button>
+        <button  class="button-function" onclick="calculateResult()">=</button>
+            </div>
+            
+        
+    </section>
+</body>
+</html>
